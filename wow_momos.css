@@ -1,0 +1,847 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+body{
+    background-color: antiquewhite;
+    /* overflow: hidden; */
+}
+.header_for_sticky{
+    position: sticky;
+    top: 0px;
+    z-index: 9999;
+}
+.header_nav_bar{
+    /* border: black 2px solid; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(252, 252, 26); 
+    /* background-color: #e9e992; */
+    /* transition-delay: 2s;; */
+ }
+.image_icon{
+    margin-left: 100px;
+}
+.image_icon:hover{
+    transition: 2s;
+    transform: rotateY(360deg);
+    /* border: black 2px solid; */
+    /* transform: scale(1.5); */
+} 
+.header_nav_list_div{
+    /* border: violet 2px solid; */
+    width: 100%;
+    /* display: flex; */
+    margin-right: 100px;
+}
+.header_nav_li {
+    width: 100%;
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+    list-style: none;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 500;
+    font-size: medium;
+    font-weight: bolder;
+}
+.header_nav_li li a{
+    text-decoration: none;
+    color: black;
+}
+.header_nav_li li:hover{
+    background-color:rgb(219, 155, 219);
+    border-radius: 5px;
+    transform: scale(1.2);
+}
+.main_image_div_container{
+    /* border: black 2px solid; */
+    /* background: linear-gradient(180deg, rgb(252, 252, 26) , rgb(207, 181, 181)); */
+    /* background-image:url(https://franchisestart.in/wp-content/uploads/2020/04/wow-momo-franchise.jpg);
+     background-size:cover;
+    text-align: center;*/
+    height: 600px;
+    /* filter: blur(2px);  */
+    /* transform: skewY(-5deg); */
+    position: relative;
+}
+.main_image_div_container::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url(https://franchisestart.in/wp-content/uploads/2020/04/wow-momo-franchise.jpg);
+  /* background-image: url(https://c.ndtvimg.com/2020-01/2brioi88_momos_625x300_21_January_20.jpg); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(0px);
+
+}
+.main_image_div_container:hover{
+    transition: 1s;
+    height: 650px;
+    transition-property: height;
+    transition-duration: 2s;
+}
+.image_inside_div{
+    /* border: blueviolet 2px solid; */
+    /* border-radius: 40%; */
+    /* background-color: rgb(233, 94, 94); */
+    /* display: inline-block; */
+    position: relative;
+    z-index: 10;
+    /* top: 50px;
+    width: 100%;
+    height: 500px;
+    right: 12px; */
+    text-align: center;
+
+}
+.image_inside_div:hover{
+    transition: 2s;
+    transform: scale(1.1);
+    /* transform: rotateX(360deg);*/
+}
+.div_main_content{
+    z-index: 10;
+    background: -webkit-linear-gradient(45deg, red, blueviolet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Fredoka One', cursive;
+    font-weight: 1000;
+    font-weight: bolder;
+}
+.section2_div_content{
+    /* border: black 2px solid; */
+    position: relative;
+    top: 40px;
+}
+.main_line1{
+    font-size: 3rem ;
+    /* border: turquoise 2px solid; */
+    font-weight: bolder;
+    text-align: center;
+  
+    
+}
+.main_line2{
+    font-size: 2rem;
+    /* border: yellowgreen 2px solid; */
+    font-weight: bolder;
+    text-align: center;
+   
+}
+.main_line3{
+    font-size: 2rem;
+    /* border: blueviolet 2px solid; */
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 30px;
+
+
+}
+.main_line4{
+    text-align: center;
+    margin-top: 20px;
+    
+}
+.button_content{
+    border-radius: 40%;
+    padding: 20px;
+    width: 200px;
+    color: black;
+    font-size: large;
+    font-family: 'Fredoka One', cursive;
+    background-color: rgb(240, 206, 206);
+}
+.button_content:hover{
+    background-color: rgb(127, 127, 233);
+    color: cornsilk;
+    transition: 1s;
+    width: 300px;
+}
+.section3_div{
+ /* border: black 2px solid; */
+ position: relative;
+ top: 100px;
+ /* background-color: rgb(238, 192, 192); */
+}
+.section3_category{
+    /* border: brown 2px solid; */
+    display: inline-block;
+    position: relative;
+    bottom: 180px;
+    left: 30px;
+}
+.see_menu{
+    font-family: 'Fredoka One', cursive; 
+    font-weight: bolder;
+    color: rgb(111, 161, 9);
+    font-weight: 1rem;
+    font-size: xx-large;
+}
+.para_intern_momos{
+    font-family: 'Fredoka One', cursive; 
+    font-weight: bolder;
+    color: rgb(111, 161, 9);
+    font-weight: 2rem;
+    font-size: xx-large;
+}
+.para_quote{
+    font-family: 'Fredoka One', cursive; 
+    font-weight: bolder;
+    font-weight: 2rem;
+    font-size: medium;
+    color: rgb(111, 161, 9);
+}
+.section3_button{
+    font-family: 'Fredoka One', cursive; 
+    font-weight: 1rem;
+    font-size: medium;
+    color: black;
+    border-radius: 40%;
+    padding: 15px;
+    position: relative;
+    top: 40px;
+    left: 140px;
+    background-color: rgb(111, 161, 9);
+
+}
+.section3_button:hover{
+   color: cornsilk;
+   background-color: crimson;
+   transition: 1s;
+}
+.typesofmomos_div{
+    /* border: darkblue 2px solid; */
+    display: inline-block;
+    position: relative;
+    left: 100px;
+}
+/* .categories_momos{
+    /* border: darkgoldenrod 2px solid; */
+   /* display: inline-block;
+   display: flex;
+   top: 0px;
+   justify-content: center;
+   font-family: 'Fredoka One', cursive; 
+   font-weight: 4rem;
+   font-size: xx-large;
+   font-weight: bolder;
+   color: crimson;
+
+} */ 
+.section3_image_container{
+    /* border: darkolivegreen 2px solid; */
+    display: flex;
+    gap: 50px;
+    position: relative;
+    top: 20px;
+}
+.veg_momo_image_div{
+    /* border: chocolate 2px solid; */
+    display: inline-block;
+    border-radius: 30px;
+}
+.veg_momo_image_div:hover{
+    transform: scale(1.1);
+    /* border: whitesmoke 2px solid; */
+   -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    transition: 1s;
+    background-color:  rgb(252, 252, 26) ;
+}
+.section3_image1{
+    border-radius: 30px;
+}
+.section3_content{
+    color: crimson;
+    font-size: x-large;
+    font-family: 'Fredoka One', cursive;
+    font-weight: 900;
+    text-align: center;
+}
+
+.non-veg_image_div{
+    /* border: darkgreen 2px solid; */
+    display: inline-block;
+    border-radius: 30px;
+}
+ .non-veg_image_div:hover{
+    transform: scale(1.1);
+    /* border: whitesmoke 2px solid; */
+   -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    transition: 1s;
+    background-color:  rgb(252, 252, 26) ;
+}
+.section3_image2{
+    border-radius: 30px;
+}
+
+.fried_momo_image_div{
+    /* border: darkmagenta 2px solid; */
+    display: inline-block;
+    border-radius: 30px;
+}
+.fried_momo_image_div:hover{
+    transform: scale(1.1);
+    /* border: whitesmoke 2px solid; */
+   -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    transition: 1s;
+    background-color:  rgb(252, 252, 26) ;
+}
+
+.section3_image3{
+    border-radius: 30px;
+}
+
+
+/* .main_container_image{
+    border-radius: 10%;
+    position: relative;
+    margin: 10px;
+} */
+   
+.wave_background_div{
+      /* border: violet 2px solid;   */
+     position: relative;
+    width: 100%;
+    height: 400px;
+    /* top: 200px; */
+    z-index: -5;
+
+}
+.wave_background_div:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url(./wave-haikei\ \(1\).svg);
+    background-size: cover;
+    position: absolute;
+    /* bottom: 330px; */
+    bottom: 150px;
+} 
+.section4_container{
+    /* border: crimson 2px solid; */
+    /* margin-bottom: 200px; */
+    position: relative;
+    bottom: 160px;
+    background-color: #e9e992;
+}
+.section4_heading{
+    /* border: darkmagenta 2px solid; */
+    font-size: larger;
+    font-weight: bolder;
+    font-family: 'Fredoka One', cursive;
+    color: black;
+    text-align: center;
+}
+.section4_subsection{
+    font-size: xx-large;
+    font-weight: 2rem;
+    font-family: 'Fredoka One', cursive;
+    color: black;
+    text-align: center;
+}
+.section4_image_container{
+    /* display: flex; */
+    /* border: darkmagenta 2px solid; */
+    /* justify-content: space-evenly; */
+    /* flex-wrap: wrap; */
+    /* margin-top: 40px; */
+}
+.div_image{
+    /* border: aquamarine 2px solid; */
+    margin-bottom: 50px;
+    text-align: center;
+    border-radius: 10%;
+}
+.div_image:hover{
+    background-color: whitesmoke;
+    transition: 1s;
+    transform: scaleY(1.1);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    box-shadow: 0px 0px 8px black;
+
+}
+.section4_main_image{
+    border-radius: 10%;
+}
+.image_info{
+    color: crimson;
+    font-size: x-large;
+    font-family: 'Fredoka One', cursive;
+    font-weight: 900;
+}
+.divcontainer_image{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+.background{
+    /* border: crimson 2px solid; */
+    bottom: 320px;
+    z-index: -6;
+    transform: rotate(180deg);
+}
+.div_button{
+    text-align: center;
+}
+.button_order{
+    padding: 20px;
+    font-size: medium;
+    font-family: 'Fredoka One', cursive;
+    font-weight: bolder;
+    border-radius: 20%;
+    background-color: rgb(203, 213, 231);
+}
+.button_order:hover{
+    background-color: rgb(111, 161, 9);
+    color:whitesmoke;
+    width: 500px;
+    transition: 2s;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 1px black;
+}
+.section5_main_container{
+ /* border: black 2px solid; */
+ position: relative;
+ bottom: 490px;
+ /* margin-bottom: 800px; */
+ /* margin-top: 0px; */
+
+}
+.section5_div_para{
+    /* border: blue 2px solid; */
+    text-align: center;
+}
+.section5_para_content{
+    font-size: larger;
+    font-weight: bolder;
+    font-family: 'Fredoka One', cursive;
+    color: violet;
+    margin-top: 60px;
+}
+.section5_para2_content{
+    font-size: x-large;
+    /* font-weight: bolder; */
+    font-family: 'Fredoka One', cursive;
+    color: black;
+    margin-top: 20px;
+    /* border: violet 2px solid; */
+    margin-bottom: 30px;
+}
+.section5_form_div{
+    /* border: brown 2px solid; */
+    text-align: center;
+    /* background-image: url(https://images.squarespace-cdn.com/content/v1/5efa66fcc7dadd0ad3cbe4b3/1596126860821-RXKG8K0ZRZ529LK49T3K/momo_web.png?format=2500w); */
+    background: url(https://yummymomo.in/assets/images/real-ingredients-used-at-momo-king-india-676x451.jpg);
+    background-size: cover;
+    filter: blur(0px);
+}
+.section5_main_form{
+    /* border: darkblue 2px solid; */
+    display: inline-block;
+    padding: 100px;
+    /* display: flex;
+    flex-direction: column;
+    position: relative; */
+    width: 500px;
+    z-index: 9;
+}
+.form_content{
+    /* border: darkorchid 2px solid; */
+    font-size: x-large;
+    /* font-weight: bolder; */
+    font-family: 'Fredoka One', cursive;
+    color: whitesmoke;
+    margin-top: 30px;
+    z-index: 10;
+    padding: 3px;
+    
+}
+/* .form_content input::placeholder{
+    padding: 5px;
+    color: blueviolet;
+} */
+.button_form{
+    padding: 20px;
+    color: black;
+    border-radius: 10%;
+    font-family: 'Fredoka One', cursive;
+    font-size: medium;
+    font-weight: bolder;
+    margin-top: 20px;
+    background-color: yellow;
+
+}
+.button_form:hover{
+    background-color: yellowgreen;
+    transition: 1s;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 2px whitesmoke;
+    color: blue;
+}
+.section6_logo{
+    /* border: black 2px solid; */
+    position: relative;
+    bottom: 380px;
+   text-align: center;
+   background-image: url(https://www.androidpolice.com/wp-content/uploads/2021/03/11/google-maps-hero-something.png);
+   background-size: cover;
+}
+.footer_logo_div{
+    text-align: center;
+    margin-top: 30px;
+    /* border: sienna 2px solid; */
+}
+.footer_logo{
+    border-radius: 10%;
+    margin-top: 20px;
+    position: relative;
+    top: 850px;
+}
+.footer_logo:hover{
+    transition: 2s;
+    transform: rotateY(360deg);
+}
+.main_footer_content{
+    /* border: royalblue 2px solid; */
+    margin-bottom: 50px;
+    text-align: center;
+    position: relative;
+    bottom: 150px;
+}
+.footer_content{
+     /* border: darkorchid 2px solid; */
+     font-size: x-large;
+     /* font-weight: bolder; */
+     font-family: 'Fredoka One', cursive;
+     color: black;
+     margin-top: 30px;
+     font-weight: 2rem;
+}
+.heading{
+    font-size: xx-large;
+    color: black;
+    /* border: royalblue 2px solid; */
+    position: relative;
+    bottom: 400px;
+    text-align: center;
+}
+.footer_image{
+    position: relative;
+    top: 550px;
+    left: 600px;
+    /* bottom: 400px; */
+    border-radius: 10%;
+}
+.footer_image:hover{
+   transform: scale(1.1);
+   box-shadow: 0px 0px 2px black;
+   border: black 2px solid;
+   transition: 1s;
+}
+.footer_image2{
+    position: relative;
+    top: 550px;
+    right: 600px;
+    border-radius: 10% ;
+}
+.footer_image2:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 2px black;
+    border: black 2px solid;
+    transition: 1s;
+}
+@media (min-width: 0px) and (max-width:450px){
+    
+  .header_nav_bar{
+      width: 100%;
+      height: 100%;
+      
+  }
+  .image_icon{
+      width: 80px;
+      height: 80px;
+      margin-left: 0px;
+      
+  }
+  .header_nav_list_div{
+      margin-right: 5px;
+  }
+  .header_nav_li{
+      font-size: small;
+      gap: 5px;
+  }
+  .main_image_div_container{
+      width: 100%;
+      /* border: mediumblue 2px solid; */
+      height: 250px;
+      
+  }
+  .main_image_div_container::before{
+     width: 100%;
+     background-size: contain;
+     bottom: 0px;
+     height: 40vh;
+     margin: 0px;
+     top: -22px;
+  }
+  .image_inside_div{
+      display: none;
+  }
+  .image_inside_div:hover{
+      display: none;
+  }
+  .main_image_div_container:hover{
+      height: 250px ;
+
+  }
+.section2_div_content{
+    /* border: navy 2px solid; */
+    margin-bottom: 40px ;
+    position: relative;
+    font-size: x-large;
+    width: 100%;
+    top: 10px;
+}
+.div_main_content{
+    font-weight: 500;
+    font-size: x-large;
+}
+.main_line2{
+    font-size: large;
+    margin-top: 5px;
+}
+.main_line3{
+   font-size: large;
+}
+.button_content{
+    width: 100px;
+    font-size: x-small;
+    padding: 10px;
+    margin-top: 10px;
+}
+.section3_div{
+    /* border: mediumorchid 2px solid; */
+    top: 0px;
+}
+.section3_category{
+    /* border: mediumspringgreen 2px solid; */
+    bottom: 0px;
+    left: 0px;
+}
+.see_menu{
+    font-size: medium;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+.para_intern_momos{
+    font-size: x-large ;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+.para_quote{
+    margin-left: 5px;
+}
+.section3_button{
+    width: 100px;
+    font-size: small; 
+    padding: 10px;
+    margin-bottom: 8px;
+    z-index: 10;
+}
+.section3_image_container{
+    /* border: mediumvioletred 2px solid; */
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-left: 0px;
+    right: 0px;
+    justify-content: center;
+    height: 430px;
+    top: 70px;
+}
+.typesofmomos_div{
+    left: 0px;
+}
+.veg_momo_image_div{
+    width: 160px;
+    height: 170px;
+}
+.section3_image1{
+    width: 100%;
+    height: 170px;
+}
+.non-veg_image_div{
+    width: 160px;
+    height: 170px;
+}
+.section3_image2{
+    width: 100%;
+    height: 170px;
+}
+.fried_momo_image_div{
+    width: 160px;
+    height: 170px;
+}
+.section3_image3{
+    width: 100%;
+    height: 170px;
+}
+.veg_momo_image_div:hover{
+    transform: none;
+}
+.non-veg_image_div:hover{
+    transform: none;
+}
+.fried_momo_image_div:hover{
+    transform: none;
+}
+.section3_content{
+    font-size: large;
+}
+.wave_background_div{
+    /* border: orangered 2px solid; */
+}
+.wave_background_div:before{
+    bottom: 200px;
+}
+.section4_container{
+    /* border: palevioletred 2px solid; */
+    bottom: 230px;
+}
+.section4_heading{
+    font-size: medium;
+}
+.section4_subsection{
+    font-size: x-large;
+}
+.section4_image_container{
+    /* border: mediumseagreen 2px solid; */
+}
+.divcontainer_image{
+    /* border: mediumblue 2px solid; */
+    flex-wrap: wrap;
+    margin-top: 30px;
+    /* justify-content: flex-start; */
+    /* display: inline-block; */
+}
+.div_image{
+    /* border: mediumpurple 2px solid; */
+    width: 150px;
+    
+}
+.section4_main_image{
+    width: 100%;
+    height: 150px;
+}
+.image_info{
+    font-weight: 500;
+    font-size: medium;
+}
+.tandoori_momos_div{
+    /* margin-left: 170px; */
+    display: none;
+}
+.container2{
+    display: inline-block;
+    position: relative;
+    bottom: 50px;
+    margin-top: 0px;
+    margin-left: 40px;
+    margin-right: 20px;
+
+}
+.container3{
+    display: inline-block;
+    position: relative;
+    bottom: 30px;
+
+}
+.fried_momo_div{
+    /* margin-bottom: 30px; */
+    position: relative;
+    bottom: 20px;
+
+}
+.div_button{
+    /* border: mediumblue 2px solid; */
+    position: relative;
+    bottom: 30px;
+}
+.button_order{
+    font-size: small;
+    padding: 15px;
+}
+.button_order:hover{
+    width: 200px;
+}
+.background{
+    /* border: midnightblue 2px solid; */
+    bottom: 500px;
+}
+.section5_main_container{
+    /* border: blueviolet 2px solid; */
+    bottom: 650px;
+}
+.section5_para2_content{
+    font-size: large;
+}
+.section5_form_div{
+    background-size: contain;
+    height: 600px;
+}
+.section5_main_form{
+    /* border: red 2px solid ; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+.form_content{
+    font-size: medium;
+    margin-left: 0px;
+    margin-top: 0px;
+    
+}
+.heading{
+    /* border: mediumblue 2px solid; */
+    bottom: 580px;
+}
+.footer_content{
+    margin: 0px;
+}
+.footer_image{
+    display: none;
+}
+.footer_image2{
+    display: none;
+}
+.section6_logo{
+    /* border: midnightblue 2px solid; */
+    bottom: 550px;
+    background-size: cover;
+    background-position: center ;
+    height: 750px;
+}
+.footer_logo{
+    top: 800px ;
+}
+.main_footer_content{
+    /* border: teal 2px solid; */
+    bottom: 130px;
+}
+}
